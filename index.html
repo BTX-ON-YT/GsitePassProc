@@ -25,6 +25,7 @@
     </style>
 </head>
 <body>
+
     <div id="liveAlertPlaceholder"></div>
     <h2 class="Text">Enter The Password To Proceed</h2>
     <div class="input-group mb-3">
@@ -43,14 +44,20 @@
           </div>
         </div>
       </div>
+      <h2 class="Text">Enter The Password To Proceed</h2>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2" id="passwdbox">
+    </div>
+
       <script>
           function password(){
             let inputValue = document.getElementById("passwdbox").value;
-            const passwd = "password"; 
+            const passwd = "password";
+            const redirecturl = "https://sites.google.com/churchillpark.school.nz/2022intermediatesyndicat-canry/learning-at-home/dfde5c2db86309414f0eb450c098ff5b"; 
             const toastLiveExample = document.getElementById('liveToast')
             document.getElementById("passwdbox").innerHTML = inputValue;
             if(inputValue == passwd){
-                window.location.href = "https://sites.google.com/churchillpark.school.nz/2022intermediatesyndicat-canry/learning-at-home/dfde5c2db86309414f0eb450c098ff5b";
+                window.location.href = redirecturl;
             }
             else{
                 const toast = new bootstrap.Toast(toastLiveExample)
